@@ -4,6 +4,8 @@ public class BalancedParentheses{
         String str = "((()))";
         System.out.println(new BalancedParentheses().solution(str));
     }
+
+    //time complexity O(n)
     private boolean solution(String str){
         Stack<Character> st = new Stack<>();
         for(int i = 0; i < str.length(); i++){
