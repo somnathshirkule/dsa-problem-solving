@@ -6,6 +6,7 @@ public class BalancedParentheses{
     }
 
     //time complexity O(n)
+    //space complexity O(1)
     private boolean solution(String str){
         Stack<Character> st = new Stack<>();
         for(int i = 0; i < str.length(); i++){
