@@ -4,6 +4,7 @@ public class TwoSum{
     }
 
     //time complexity O(n^2)
+    //space complexity O(1)
     private int[] solution(int[] arr, int target){
         int[] tempArr = new int[2];
         for(int i = 0; i < arr.length; i++){
@@ -18,6 +19,7 @@ public class TwoSum{
     }
 
     //time complexity O(n)
+    //space complexity O(1)
     private int[] solution1(int[] arr, int target){
         int[] temp = new int[2];
         Map<Integer, Integer> tempMap = new HashMap<>();
