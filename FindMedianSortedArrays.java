@@ -32,7 +32,6 @@ public class FindMedianSortedArrays{
        
         double median = -1;
         if(mainArray.length % 2 == 0){
-        	System.out.println(mainArray[(mainArray.length/2) - 1]);
             median = ((double)mainArray[mainArray.length/2] + (double)mainArray[(mainArray.length/2) - 1])/2;
         }else{
             median = mainArray[mainArray.length/2];
