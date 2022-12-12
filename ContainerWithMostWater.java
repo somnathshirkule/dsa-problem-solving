@@ -14,4 +14,19 @@ public class ContainerWithMostWater{
         }
         return maxStorage;
     }
+
+    //Time complexity O(n)
+    public int solution1(int[] height){
+        int l = 0;
+        int r = height.length - 1;
+        int maxStorage = 0;
+        while(l < r){
+            int tempStorage = (height[l] < height[r] ? height[l] : height[r]) * (r - l);
+            if(tempStorage > maxStorage)
+                maxStorage = tempStorage;
+            if(height[l] < height[r]) l++;
+            else r--;
+        }
+        return maxStorage;
+    }
 }
