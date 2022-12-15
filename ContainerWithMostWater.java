@@ -15,7 +15,7 @@ public class ContainerWithMostWater{
         return maxStorage;
     }
 
-    //Two pointers & => Time complexity O(n)
+    //Two pointers &  => Time complexity O(n)
     public int solution1(int[] height){
         int l = 0;
         int r = height.length - 1;
