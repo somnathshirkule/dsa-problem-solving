@@ -1,5 +1,5 @@
 public class BubbleSort{
-    public int[] sort(int[] array){
+    public void sort(int[] array){
         boolean flag = true;
 
         while(flag){
