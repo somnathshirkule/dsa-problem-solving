@@ -1,3 +1,4 @@
+import java.util.*;
 public class GenerateParenthesis{
     public List<String> solution(int n){
         List<String> responseList = new ArrayList<>();
@@ -12,10 +13,10 @@ public class GenerateParenthesis{
         }
 
         if(open < n){
-            generate(n, responseList, open + 1, close, str + "(")
+            generate(n, responseList, open + 1, close, str + "(");
         }
         if(close < open){
-            generate(n, responseList, open, close + 1, str + ")")
+            generate(n, responseList, open, close + 1, str + ")");
         }
     }
 }
