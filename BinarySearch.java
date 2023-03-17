@@ -18,5 +18,6 @@ public class BinarySearch{
         
         if(mid < element)
             return recursiveFind(sortedArray, element,midIndex + 1, end);
+        else return false;
     }
 }
