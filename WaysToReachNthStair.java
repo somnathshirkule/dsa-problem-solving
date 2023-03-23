@@ -1,3 +1,4 @@
+import java.util.*;;
 public class WaysToReachNthStair{
     public List<String> getWays(int n){
         //n is the number of stair Nth stair.
